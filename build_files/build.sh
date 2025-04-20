@@ -25,14 +25,9 @@ dnf5 -y install hyprland-plugins # TODO there seems to be some nice stuff
 dnf5 -y install hyprnome # workspace switching like in my beloved gnome
 dnf5 -y install uwsm # needed to start hyprland via systemd
 dnf5 -y install hyprshot #screenshot
-
-# Add packages from azandure here
 dnf5 -y install clipse # Clipboard-Manager - TODO see the clipse GitHub for hyprland instructions
 
-# Add packages from errornointernet here
 dnf5 -y install walker # cool application launcher
-
-# Add packages from ublue-os here, unclear if this is necessary or if they are part of ublue-main
 dnf5 -y install ublue-brew
 dnf5 -y install ptyxis # my favorite terminal emu
 dnf5 -y install nautilus-open-any-terminal
@@ -44,35 +39,16 @@ dnf5 -y copr disable solopasha/hyprland
 dnf5 -y copr disable azandure/clipse
 dnf5 -y copr disable errornointernet/walker
 dnf5 -y copr disable ublue-os/staging
+dnf5 -y remove nano
 dnf5 -y copr enable ublue-os/packages 
-
-# Add regular fedora packages here
-
-# Must-Have according to hyprland docs
 dnf -y install kitty # default terminal on hyprland
 dnf -y install dunst # notification daemon
 dnf -y install pipewire wireplumber # needed for screenshare
 dnf -y install xdg-desktop-portal-gtk # needed for filepicker
 dnf -y install qt5-qtwayland qt6-qtwayland # wayland support for QT
-
-# Must-Have according to me (tm)
-dnf -y install waybar # GTK status bar for wlroots with hyprland support
-# can be started with exec-once, until uwsm is working. Then use waybar.service.
-dnf -y install udiskie # automount usb, start with exec-once
-# TODO Do I want a dock?
+dnf -y install waybar
+dnf -y install udiskie
 dnf5 -y install zsh
-
-# File managers (Nautlius for life)
 dnf -y install nautilus
-# dnf -y install superfile # maybe I'm someday a terminal guy, superfile looks nice. No fedora package.
-
-# TODO Maybe add and configure hyproled? Seems kinda unnecessary, idk. No package tho.
-# TODO Add hot-corner support, maybe https://lib.rs/crates/hyprcorners or https://github.com/AndreasBackx/waycorner
-
-# TODO find out how to install some software through brew in the user home
-
-# Software I want
-dnf -y install mpv # can't get over the fact that I'm using mpv, but it's the only one with HDR support
-# TODO Alias to start mpv in hdr-mode with less pain
 dnf -y install distrobox
 dnf -y install tealdeer
