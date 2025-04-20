@@ -60,6 +60,7 @@ dnf -y install waybar # GTK status bar for wlroots with hyprland support
 # can be started with exec-once, until uwsm is working. Then use waybar.service.
 dnf -y install udiskie # automount usb, start with exec-once
 # TODO Do I want a dock?
+dnf5 -y install zsh
 
 # File managers (Nautlius for life)
 dnf -y install nautilus
