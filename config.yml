@@ -1,0 +1,7 @@
+flatpaks:
+- org.zulip.Zulip
+- com.valvesoftware.Steam
+- com.prusa3d.PrusaSlicer
+- org.freecad.FreeCAD
+repos:
+- 
