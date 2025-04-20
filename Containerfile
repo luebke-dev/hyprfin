@@ -17,7 +17,8 @@ FROM ghcr.io/ublue-os/base-main:42
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
-
+COPY uwsm-hypr.sh /etc/profile.d/uwsm-hypr.sh
+RUN ostree container commit
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
