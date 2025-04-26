@@ -34,6 +34,7 @@ dnf5 -y copr disable errornointernet/walker
 dnf5 -y copr disable ublue-os/staging
 dnf5 -y remove nano
 dnf5 -y copr enable ublue-os/packages 
+dnf5 -y install flatpak-spawn fuse android-udev-rules intel-vaapi-driver
 dnf -y install kitty
 dnf -y install dunst
 dnf -y install pipewire wireplumber
