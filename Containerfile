@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/base-nvidia:42
+FROM ghcr.io/ublue-os/base-nvidia:20250506@sha256:ea35fbfc9ea52a5f94bc31e87180f81b3faa2bf4a010a9465589632a693c9d14
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
